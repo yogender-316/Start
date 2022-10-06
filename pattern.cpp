@@ -5,7 +5,7 @@ int main()
 {
     int n;
     cin>>n;
-    for(int i=1;i<=n;i++)
+    /*for(int i=1;i<=n;i++)
     {   int cpy=i;
         for(int j=1;j<=n-i;j++)
         cout<<" ";
@@ -17,6 +17,19 @@ int main()
         cout<<l;
 
         cout<<endl;
+    }*/
+    for (int i = 1; i <= n; i++)
+    {
+        for(int j=1;j<=i;j++)
+        cout<<j;
+        for(int k=2*(n-i);k>0;k--)
+        cout<<" ";
+        for(int l=i;l>=1;l--)
+        cout<<l;
+
+        cout<<endl;
     }
+    
+
     return 0;
 }
